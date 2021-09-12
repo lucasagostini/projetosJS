@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/weather.png">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>A previsão do tempo para {{location}} é de {{forecastData.data.temperature}} graus.</p>
+        <p>A chance de precipitação é de {{forecastData.data.precip}}%.</p>
+        <p>Atualmente o clima está {{forecastData.data.weather_descriptions}}.</p>
+        <img src={{forecastData.data.weather_icons}}
+    </div>
+    {{>footer}}
+</body>
+
+
+
+</html>

@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, location, callback) => {
             callback('Não foi possível encontrar a localização informada, tente novamente.')
         }
         else {
-           callback(undefined, 'A previsão do tempo para '+location+' é de '+body.current.temperature+ ' graus.\n A chance de precipitação é de '+ body.current.precip+'%.Atualmente o clima está '+body.current.weather_descriptions+'.')
+           callback(undefined, 'A previsão do tempo para '+location+' é de '+body.current.temperature+ ' graus.\n A chance de precipitação é de '+ body.current.precip+'%.Atualmente o clima está '+body.current.weather_descriptions+'. A velocidade do vento é de '+ body.current.wind_speed+'Km/h.')
            }
             
         
